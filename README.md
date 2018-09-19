@@ -2,41 +2,38 @@
 
 ## 简介
 ![soa](./deploy/img/soa.png)
+&emsp;&emsp;对于网络应用程序,前端越来越大,后端变得越来越不重要. 我们的网络应用程序中90％是前端代码,后端非常薄.
 
-对于网络应用程序,前端越来越大,后端变得越来越不重要. 我们的网络应用程序中90％是前端代码,后端非常薄.
-
-随着时间的推移,Web应用也会发生变化,开发技术和框架也是如此, 这需要支持允许不同的前端框架共存、共用、共生, 前端微服务化应运而生.
+&emsp;&emsp;随着时间的推移,Web应用也会发生变化,开发技术和框架也是如此, 这需要支持允许不同的前端框架共存、共用、共生, 前端微服务化应运而生.
 
 ## 准备
 1. 获取微服务基础工程
-github:[fe-microservice-base](https://github.com/water-design/fe-microservice-base)
-下载github微服务基础工程,然后初始化git和安装依赖.
 
-> fe-microservice-base 工程
+    下载github微服务[基础工程ZIP包](https://github.com/water-design/fe-microservice-base/archive/master.zip),然后初始化git和安装依赖.
 
-- 依赖
-
-1. angular版本: 6.1
-
-2. 微服务开发统一使用[ng-cosmos-ui](https://water-design.github.io/ng-cosmos-ui/)组件库,[water-service](https://confluence.tendcloud.com/display/VD/water-service)处理后端数据.
-
-- 目录说明
-  
-├── [说明]  README.md
-├── [ng配置]  angular.json
-├── [webpack配置]  config
-├── [微服务部署]  deploy
-├── [打包输出]  dist
-├── [测试]  e2e
-├── [依赖包]  node_modules
-├── [依赖锁定]  package-lock.json
-├── [依赖配置]  package.json
-├── [代码检查]  sonar-project.properties
-├── [开发目录]  src
-├── [测试]  test.json
-├── [ts配置]  tsconfig.json
-├── [ts检查]  tslint.json
-└── [webpack基础配置]  webpack.config.js
+  - 依赖
+    
+    a. angular版本: 6.1
+    
+    b. 微服务开发统一使用[ng-cosmos-ui](https://water-design.github.io/ng-cosmos-ui/)组件库,[water-service](https://confluence.tendcloud.com/display/VD/water-service)处理后端数据.
+    
+  - 目录说明
+      
+    ├── [说明]  README.md
+    ├── [ng配置]  angular.json
+    ├── [webpack配置]  config
+    ├── [微服务部署]  deploy
+    ├── [打包输出]  dist
+    ├── [测试]  e2e
+    ├── [依赖包]  node_modules
+    ├── [依赖锁定]  package-lock.json
+    ├── [依赖配置]  package.json
+    ├── [代码检查]  sonar-project.properties
+    ├── [开发目录]  src
+    ├── [测试]  test.json
+    ├── [ts配置]  tsconfig.json
+    ├── [ts检查]  tslint.json
+    └── [webpack基础配置]  webpack.config.js
 
 2. 启动工程
 
@@ -197,6 +194,7 @@ $ npm run build
 
 
 ## 云端部署
+
 
 
 
