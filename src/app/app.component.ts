@@ -7,13 +7,11 @@ import { Component, ViewEncapsulation, Input, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  size = 'default';
 
   @Input() title: string = 'cosmos';
   ngOnInit() {
-    if (this.size) {
-      console.log('run100');
 
-    }
   }
+
+
 }

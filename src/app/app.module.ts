@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { createCustomElement } from '@angular/elements';
 import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-cosmos-ui';
+import { CenterModule } from './center/center.module';
 import { AppComponent } from './app.component';
 
 /** 配置 angular i18n **/
@@ -18,6 +19,7 @@ registerLocaleData(zh);
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    CenterModule,
     NgZorroAntdModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],

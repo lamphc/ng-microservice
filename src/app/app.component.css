@@ -1,6 +1,3 @@
 .micro {
    width:100%;height:60px;line-height:60px;text-align:center;background:#2185f0;color:#fff
-  }
-nz-date-picker, nz-month-picker, nz-range-picker, nz-week-picker {
-  margin: 0 8px 12px 0;
 }
