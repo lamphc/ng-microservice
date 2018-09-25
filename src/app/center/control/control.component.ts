@@ -36,7 +36,7 @@ export class ControlComponent implements OnInit {
     const node = document.createElement("link");
     node.rel = "stylesheet/less";
     node.type = "text/css";
-    node.href = "/assets/less/color.less";
+    node.href = "/assets/less/soa.soaname.less";
     document.getElementsByTagName("head")[0].appendChild(node);
   }
   lessLoaded = false;
