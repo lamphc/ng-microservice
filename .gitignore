@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /dist-server
+/publish
 /tmp
 /out-tsc
 .cache/

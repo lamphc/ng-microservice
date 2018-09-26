@@ -12,7 +12,9 @@
     "build": "npm run build:ng && npm run copy:assets && npm run copy:bundle",
     "deploy": "npm run build && live-server deploy",
     "package": "cat deploy/libs/{native-shim,custom-elements.min,zone.min,rxjs.umd.min,core.umd.min,common.umd.min,platform-browser.umd.min,elements.umd.min}.js | gzip > deploy/common/soa.base.js.gz",
-    "unpackage": "gunzip -c deploy/common/soa.base.js.gz > deploy/common/soa.base.js"
+    "unpackage": "gunzip -c deploy/common/soa.base.js.gz > deploy/common/soa.base.js",
+    "copy:extra": "cpr water/package.json publish/ -o && cpr water/README.md publish/ -o",
+    "publish:water": "tsc -p tsconfig.water.json --outDir publish && npm run copy:extra"
   },
   "private": true,
   "dependencies": {
@@ -26,14 +28,16 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ngx-translate/core": "^10.0.2",
+    "@ngx-translate/http-loader": "^3.0.1",
     "@webcomponents/custom-elements": "^1.1.2",
     "core-js": "^2.5.4",
     "document-register-element": "^1.7.2",
     "elements-zone-strategy": "^6.0.4",
     "ng-cosmos-ui": "0.0.5",
     "rxjs": "^6.2.2",
-    "zone.js": "^0.8.26",
-    "water-service": "0.0.2"
+    "water-service": "0.0.2",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/cli": "^6.1.1",

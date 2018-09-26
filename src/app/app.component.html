@@ -1,3 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1 class="micro" i18n>Microservice-{{title}}</h1>
-<app-control></app-control>
+<h1 class="micro" i18n>{{ 'SOANAME.TITLE' | translate }}</h1>
+<div class="soa-container">
+    <div>
+        <label>
+            {{ 'SOANAME.SELECT' | translate }}
+            <nz-select style="width: 120px;" (ngModelChange)="setLang($event)" [(ngModel)]="selectedLang" nzAllowClear>
+                <nz-option nzValue="en" nzLabel="en"></nz-option>
+                <nz-option nzValue="zh" nzLabel="zh"></nz-option>
+
+            </nz-select>
+        </label>
+        <label>
+            {{ 'SOANAME.THEME' | translate }}
+            <nz-select style="width: 120px;" (ngModelChange)="setTheme($event)" [(ngModel)]="selectedColor"
+                nzAllowClear nzPlaceHolder="Choose">
+                <nz-option nzValue="red" nzLabel="red"></nz-option>
+                <nz-option nzValue="orange" nzLabel="orange"></nz-option>
+                <nz-option nzValue="#2185f0" nzLabel="blue"></nz-option>
+            </nz-select>
+        </label>
+    </div>
+    <app-control></app-control>
+</div>

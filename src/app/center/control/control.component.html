@@ -1,17 +1,8 @@
-<p>
-  <nz-select style="width: 120px;" (ngModelChange)="setTheme($event)" [(ngModel)]="selectedColor" nzAllowClear
-    nzPlaceHolder="Choose">
-    <nz-option nzValue="red" nzLabel="red"></nz-option>
-    <nz-option nzValue="orange" nzLabel="orange"></nz-option>
-    <nz-option nzValue="#2185f0" nzLabel="blue"></nz-option>
-  </nz-select>
-
-  <nz-select style="width: 120px;" (ngModelChange)="setLang($event)" [(ngModel)]="selectedLang" nzAllowClear>
-    <nz-option nzValue="en" nzLabel="en"></nz-option>
-    <nz-option nzValue="zh" nzLabel="zh"></nz-option>
-
-  </nz-select>
-
-
-</p>
+<div class="box">
+  <nz-steps [nzCurrent]="current" nzSize="small">
+    <nz-step nzTitle="Finished"></nz-step>
+    <nz-step nzTitle="In Progress"></nz-step>
+    <nz-step nzTitle="Waiting"></nz-step>
+  </nz-steps>
+</div>
 <app-keep></app-keep>

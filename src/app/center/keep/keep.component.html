@@ -1,22 +1,25 @@
-<nz-radio-group [(ngModel)]="size">
-  <label nz-radio-button nzValue="large">large</label>
-  <label nz-radio-button nzValue="default">default</label>
-  <label nz-radio-button nzValue="small">small</label>
-</nz-radio-group>
-<br /><br />
-<nz-date-picker [nzSize]="size"></nz-date-picker>
-<br />
-<nz-month-picker [nzSize]="size"></nz-month-picker>
-<br />
-<nz-range-picker [nzSize]="size"></nz-range-picker>
-<br />
-<nz-week-picker [nzSize]="size"></nz-week-picker>
-<p>
-  <!-- <nz-time-picker [(ngModel)]="time" [nzDefaultOpenValue]="defaultOpenValue"></nz-time-picker> -->
+<div class="box">
+  <nz-radio-group [(ngModel)]="size">
+    <label nz-radio-button nzValue="large">large</label>
+    <label nz-radio-button nzValue="default">default</label>
+    <label nz-radio-button nzValue="small">small</label>
+  </nz-radio-group>
+  <p>{{ 'SOANAME.SELECT' | translate }}</p>
+  <br /><br />
+  <nz-date-picker [nzSize]="size"></nz-date-picker>
+  <br />
+  <nz-month-picker [nzSize]="size"></nz-month-picker>
+  <br />
+  <nz-range-picker [nzSize]="size"></nz-range-picker>
+  <br />
+  <nz-week-picker [nzSize]="size"></nz-week-picker>
+  <p>
+    <!-- <nz-time-picker [(ngModel)]="time" [nzDefaultOpenValue]="defaultOpenValue"></nz-time-picker> -->
 
-</p>
+  </p>
 
 
-<p>
-  <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
-</p>
+  <p>
+    <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
+  </p>
+</div>

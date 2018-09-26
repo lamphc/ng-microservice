@@ -13,6 +13,11 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 registerLocaleData(zh);
 
+// translate for soa
+import { TranslateModule, TranslateLoader, HttpLoaderFactory } from "water-utils";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,7 +25,15 @@ registerLocaleData(zh);
     BrowserAnimationsModule,
     FormsModule,
     CenterModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   entryComponents: [AppComponent]
@@ -30,9 +43,8 @@ export class AppModule {
   constructor(private injector: Injector) {
     const strategyFactory = new ElementZoneStrategyFactory(AppComponent, this.injector);
     const customCosmos = createCustomElement(AppComponent, { injector: this.injector, strategyFactory });
-    if (!customElements.get('soa-demo')) {
-      customElements.define('soa-demo', customCosmos);
-    }
+    customElements.define('soa-demo', customCosmos);
+
   }
 
   ngDoBootstrap() {
