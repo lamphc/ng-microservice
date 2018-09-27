@@ -9,6 +9,7 @@ import { en, zh } from "./app.translate"
 })
 export class AppComponent implements OnInit {
   constructor(public translate: TranslateService, private nzI18nService: NzI18nService) {
+    //初始化国际化配置
     translate.setTranslation('zh', zh);
     translate.setTranslation('en', en);
     translate.addLangs(['zh', 'en']);
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
 
   }
   @Input() title: string = 'cosmos';
-
+  //demo
   //language change
   selectedLang = "zh";
   //theme change
