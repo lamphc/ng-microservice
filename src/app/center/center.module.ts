@@ -4,6 +4,7 @@ import { ControlComponent } from './control/control.component';
 import { KeepComponent } from './keep/keep.component';
 import { FormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-cosmos-ui';
+import { TranslateModule } from "water-utils";
 
 
 
@@ -11,6 +12,7 @@ import { NgZorroAntdModule } from 'ng-cosmos-ui';
   imports: [
     CommonModule,
     FormsModule,
+    TranslateModule,
     NgZorroAntdModule
   ],
   declarations: [ControlComponent, KeepComponent],

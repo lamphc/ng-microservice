@@ -38,6 +38,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   entryComponents: [AppComponent]
 })
+
 export class AppModule {
 
   constructor(private injector: Injector) {

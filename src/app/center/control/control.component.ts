@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { en_US, zh_CN, NzI18nService, NzMessageService } from "ng-cosmos-ui";
 
 @Component({
   selector: 'app-control',

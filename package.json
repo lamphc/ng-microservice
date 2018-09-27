@@ -8,10 +8,10 @@
     "build:webpack": "webpack-cli",
     "build:ng": "ng build --prod --extraWebpackConfig config/webpack.extra.js --output-hashing none",
     "copy:bundle": "cpr dist/soa-elements/main.js deploy/soa/soa.demo.js -o",
-    "copy:assets": "cpr dist/soa-elements/assets deploy/assets/ -o",
+    "copy:assets": "cpr dist/soa-elements/assets/less deploy/assets/less -o",
     "build": "npm run build:ng && npm run copy:assets && npm run copy:bundle",
     "deploy": "npm run build && live-server deploy",
-    "package": "cat deploy/libs/{native-shim,custom-elements.min,zone.min,rxjs.umd.min,core.umd.min,common.umd.min,platform-browser.umd.min,elements.umd.min}.js | gzip > deploy/common/soa.base.js.gz",
+    "package": "cat src/assets/libs/{native-shim,custom-elements.min,zone.min,rxjs.umd.min,core.umd.min,common.umd.min,platform-browser.umd.min,elements.umd.min}.js | gzip > deploy/common/soa.base.js.gz",
     "unpackage": "gunzip -c deploy/common/soa.base.js.gz > deploy/common/soa.base.js",
     "copy:extra": "cpr water/package.json publish/ -o && cpr water/README.md publish/ -o",
     "publish:water": "tsc -p tsconfig.water.json --outDir publish && npm run copy:extra"

@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, Input, OnInit } from '@angular/core';
-import { en_US, zh_CN, NzI18nService, NzMessageService } from "ng-cosmos-ui";
+import { en_US, zh_CN, NzI18nService } from "ng-cosmos-ui";
 import WaterTheme, { TranslateService } from 'water-utils';
+import { en, zh } from "./app.translate"
 @Component({
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
@@ -8,6 +9,8 @@ import WaterTheme, { TranslateService } from 'water-utils';
 })
 export class AppComponent implements OnInit {
   constructor(public translate: TranslateService, private nzI18nService: NzI18nService) {
+    translate.setTranslation('zh', zh);
+    translate.setTranslation('en', en);
     translate.addLangs(['zh', 'en']);
     translate.setDefaultLang('zh');
 
