@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./control.component.css']
 })
 export class ControlComponent implements OnInit {
-  current = 0;
+
   ngOnInit() {
 
   }

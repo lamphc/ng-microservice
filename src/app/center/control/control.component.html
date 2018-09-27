@@ -1,8 +1,6 @@
 <div class="box">
-  <nz-steps [nzCurrent]="current" nzSize="small">
-    <nz-step nzTitle="{{ 'SOANAME.LAR' | translate }}"></nz-step>
-    <nz-step nzTitle="{{ 'SOANAME.DEF' | translate }}"></nz-step>
-    <nz-step nzTitle="{{ 'SOANAME.SML' | translate }}"></nz-step>
-  </nz-steps>
+  <button nz-button nzType="primary">{{ 'SOANAME.LAR' | translate }}</button>
+  <button nz-button nzType="default">{{ 'SOANAME.DEF' | translate }}</button>
+  <button nz-button nzType="dashed">{{ 'SOANAME.SML' | translate }}</button>
 </div>
 <app-keep></app-keep>

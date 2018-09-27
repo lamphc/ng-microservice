@@ -1,4 +1,9 @@
 .box {
-    text-align: left;
-    margin:20px
+    margin:20px auto
 }
+
+[nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+  }
+

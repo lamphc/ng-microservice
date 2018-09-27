@@ -4,20 +4,15 @@
     <label nz-radio-button nzValue="default">{{ 'SOANAME.DEF' | translate }}</label>
     <label nz-radio-button nzValue="small">{{ 'SOANAME.SML' | translate }}</label>
   </nz-radio-group>
+  <p class="inner">
+    <nz-date-picker [nzSize]="size"></nz-date-picker>
 
-  <br /><br />
-  <nz-date-picker [nzSize]="size"></nz-date-picker>
-  <br />
-  <nz-month-picker [nzSize]="size"></nz-month-picker>
-  <br />
-  <nz-range-picker [nzSize]="size"></nz-range-picker>
-  <br />
-  <nz-week-picker [nzSize]="size"></nz-week-picker>
-  <p>
-    <!-- <nz-time-picker [(ngModel)]="time" [nzDefaultOpenValue]="defaultOpenValue"></nz-time-picker> -->
+    <nz-month-picker [nzSize]="size"></nz-month-picker>
 
+    <nz-range-picker [nzSize]="size"></nz-range-picker>
+
+    <nz-week-picker [nzSize]="size"></nz-week-picker>
   </p>
-
 
   <p>
     <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
