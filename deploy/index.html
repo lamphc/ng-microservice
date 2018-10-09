@@ -6,9 +6,9 @@
   <title>soa demo for deploy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./css/ng-cosmos-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="https://jic.talkingdata.com/fa-static-resource/css/ng-cosmos-ui.min.css">
   <!-- Gz share dep -->
-  <script src="./common/soa.base.js"></script>
+  <script src="https://jic.talkingdata.com/fa-static-resource/libs/soa.base.js"></script>
 
   <!-- Custom Element For SOA -->
   <script src="./soa/soa.demo.js"></script>
@@ -20,7 +20,11 @@
   <!-- Calling SOA -->
   <soa-demo title="service"></soa-demo>
 
-
+  <script>
+    document.querySelector('soa-demo').addEventListener('setTheme', (e) => {
+      console.log('event', e)
+    })
+  </script>
 </body>
 
 </html>

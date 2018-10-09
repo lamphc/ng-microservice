@@ -1,6 +1,6 @@
 {
     "name": "water-utils",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "The utils library for soa",
     "author": "MENG",
     "main": "./index.js",
@@ -19,7 +19,7 @@
     "bugs": {
         "url": "https://github.com/water-design/fe-microservice-base/issues"
     },
-    "peerDependencies": {
+    "dependencies": {
         "@ngx-translate/core": "^10.0.2",
         "@ngx-translate/http-loader": "^3.0.1"
     },

@@ -4,7 +4,8 @@
     <div>
         <label>
             {{ 'SOANAME.SELECT' | translate }}
-            <nz-select style="width: 120px;" (ngModelChange)="setLang($event)" [(ngModel)]="selectedLang" nzAllowClear>
+            <nz-select style="width: 120px;" (ngModelChange)="switchLang($event)" [(ngModel)]="selectedLang"
+                nzAllowClear>
                 <nz-option nzValue="en" nzLabel="en"></nz-option>
                 <nz-option nzValue="zh" nzLabel="zh"></nz-option>
 
@@ -12,7 +13,7 @@
         </label>
         <label>
             {{ 'SOANAME.THEME' | translate }}
-            <nz-select style="width: 120px;" (ngModelChange)="setTheme($event)" [(ngModel)]="selectedColor"
+            <nz-select style="width: 120px;" (ngModelChange)="switchTheme($event)" [(ngModel)]="selectedColor"
                 nzAllowClear nzPlaceHolder="Choose">
                 <nz-option nzValue="red" nzLabel="red"></nz-option>
                 <nz-option nzValue="orange" nzLabel="orange"></nz-option>

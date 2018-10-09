@@ -1,6 +1,6 @@
 export default class WaterTheme {
-    protected lessUrl: string = "/assets/less/soa.soaname.less";
-    protected compileUrl: string = "https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js";;
+    protected lessUrl: string;
+    protected compileUrl: string = "https://jic.talkingdata.com/fa-static-resource/libs/less.min.js";;
 
     private compileLoaded = false;
 
@@ -43,6 +43,7 @@ export default class WaterTheme {
      * @param cb 
      */
     changeTheme(lvar: any, cb?: Function) {
+        if (!lvar) return;
         if (this.compileLoaded) {
             this.setLess(lvar, cb)
         } else {
