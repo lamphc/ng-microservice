@@ -15,14 +15,19 @@
 </head>
 
 <body>
-
-
   <!-- Calling SOA -->
-  <soa-demo title="service"></soa-demo>
+  <soa-demo urlBase="http://5990367be1e4470011c46fa8.mockapi.io" typeTheme="self"></soa-demo>
 
+  <!-- Invoke -->
   <script>
-    document.querySelector('soa-demo').addEventListener('setTheme', (e) => {
-      console.log('event', e)
+    let soa = document.querySelector('soa-demo');
+    soa.lang = 'en';
+    soa.theme = 'blue';
+    soa.addEventListener('onThemeChange', (e) => {
+      console.log(`主题切换为:${e.detail}`)
+    })
+    soa.addEventListener('onLangChange', (e) => {
+      console.log(`语言切换为:${e.detail}`)
     })
   </script>
 </body>

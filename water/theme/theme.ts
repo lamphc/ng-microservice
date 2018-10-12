@@ -26,7 +26,7 @@ export default class WaterTheme {
      * @param lvar 
      * @param cb 
      */
-    protected setLess(lvar: any, cb?: Function) {
+    protected setLess(lvar: string, cb?: Function) {
         (window as any).less
             .modifyVars({
                 "@primary-color": lvar
@@ -42,7 +42,7 @@ export default class WaterTheme {
      * @param lvar 
      * @param cb 
      */
-    changeTheme(lvar: any, cb?: Function) {
+    changeTheme(lvar: string, cb?: Function): string {
         if (!lvar) return;
         if (this.compileLoaded) {
             this.setLess(lvar, cb)
@@ -55,6 +55,7 @@ export default class WaterTheme {
                 this.setLess(lvar, cb)
             });
         }
+        return lvar;
     }
     /**
      * 加载编译器

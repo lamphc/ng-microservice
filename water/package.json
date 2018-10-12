@@ -1,6 +1,6 @@
 {
     "name": "water-utils",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "The utils library for soa",
     "author": "MENG",
     "main": "./index.js",

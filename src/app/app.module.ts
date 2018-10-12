@@ -8,12 +8,12 @@ import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-cosmos-ui';
 import { CenterModule } from './center/center.module';
 import { AppComponent } from './app.component';
 
-/** 配置 angular i18n **/
+// 配置 angular i18n
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 registerLocaleData(zh);
 
-// translate for soa
+// 配置 water-utils i18n for soa
 import { TranslateModule, TranslateLoader, HttpLoaderFactory } from "water-utils";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -40,16 +40,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 })
 
 export class AppModule {
-
+  //定义微服务
   constructor(private injector: Injector) {
     const strategyFactory = new ElementZoneStrategyFactory(AppComponent, this.injector);
     const customCosmos = createCustomElement(AppComponent, { injector: this.injector, strategyFactory });
     customElements.define('soa-demo', customCosmos);
-
   }
 
-  ngDoBootstrap() {
-
-  }
+  ngDoBootstrap() { }
 }
 

@@ -1,3 +1,8 @@
+/**
+ * water-utils 多语言配置
+ * zh and en
+ * ot
+ */
 export const en = {
     "SOANAME": {
         "TITLE": "Welcome to microservices",
