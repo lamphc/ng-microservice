@@ -38,6 +38,7 @@
     "ng-cosmos-ui": "0.0.5",
     "rxjs": "^6.2.2",
     "water-service": "0.0.2",
+    "water-utils": "0.0.4",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

@@ -15,13 +15,6 @@
     "lib": [
       "es2017",
       "dom"
-    ],
-    //npm for water-utils test
-    "paths": {
-      "water-utils": [
-        "water",
-        "publish/index.js"
-      ]
-    }
+    ]
   }
 }
