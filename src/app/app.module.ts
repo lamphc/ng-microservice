@@ -1,3 +1,7 @@
+/**
+ * soa-demo
+ * https://github.com/water-design/fe-microservice-base
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, Injector } from '@angular/core';
