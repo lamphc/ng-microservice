@@ -17,7 +17,7 @@
     
     a. angular版本: 6.1
     
-    b. 使用[ng-cosmos-ui](https://water-design.github.io/ng-cosmos-ui/)组件库,[water-service](https://confluence.tendcloud.com/display/VD/water-service)处理后端数据
+    b. 使用[ng-cosmos-ui](https://water-design.github.io/ng-cosmos-ui/)组件库,[water-service](https://github.com/water-design/fe-microservice-base/blob/master/WATER.md)处理后端数据
     
     c. 使用water-utils处理国际化和多主题切换
     
@@ -39,7 +39,7 @@
     ├── [ts检查]  tslint.json
     └── [webpack基础配置]  webpack.config.js
 ```
-2. 启动工程
+1. 启动工程
 
 ```node
 //安装依赖
