@@ -1,5 +1,7 @@
 # SOA-FE 前端微服务开发指南
+> 基础架构
 
+[![Build Status](https://travis-ci.org/water-design/fe-microservice-base.svg?branch=master)](https://travis-ci.org/water-design/fe-microservice-base)
 ## 简介
 ![soa](./src/assets/img/soa.png)
 &emsp;&emsp;对于网络应用程序,前端越来越大,我们的网络应用程序中90％是前端代码.

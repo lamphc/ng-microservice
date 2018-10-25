@@ -1,6 +1,6 @@
 {
   "name": "soa-fe",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "start": "npm run serve:ng",
     "serve": "ng serve --extraWebpackConfig config/webpack.serve.extra.js",
@@ -15,7 +15,9 @@
     "package": "cat src/assets/base/{native-shim,custom-elements.min,zone.min,rxjs.umd.min,core.umd.min,common.umd.min,platform-browser.umd.min,elements.umd.min}.js | gzip > src/assets/libs/soa.base.js.gz",
     "unpackage": "gunzip -c src/assets/libs/soa.base.js.gz > src/assets/libs/soa.base.js",
     "copy:extra": "cpr water/package.json publish/ -o && cpr water/README.md publish/ -o",
-    "publish:water": "tsc -p tsconfig.water.json --outDir publish && npm run copy:extra"
+    "publish:water": "tsc -p tsconfig.water.json --outDir publish && npm run copy:extra",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -66,6 +68,12 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.9.2",
-    "webpack-cli": "^3.0.3"
+    "webpack-cli": "^3.0.3",
+    "travis-deploy-once": "^5.0.9",
+    "semantic-release": "^15.10.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/water-design/fe-microservice-base.git"
   }
 }
