@@ -212,4 +212,4 @@ let otherService = WaterService.create();
 ...
 ```
 
-参考:[微服务使用示例](https://github.com/water-design/fe-microservice-base)
+参考:[微服务使用示例](https://github.com/lamphc/ng-microservice)
