@@ -15,13 +15,13 @@
 
 1. 获取微服务基础工程
 
-   下载 github 微服务 Master 分支[基础工程 ZIP 包](https://github.com/ng-microservice/archive/master.zip),然后初始化 git 和安装依赖.
+   下载 github 微服务 Master 分支[基础工程 ZIP 包](https://github.com/lamphc/ng-microservice/archive/master.zip),然后初始化 git 和安装依赖.
 
 - 依赖
 
   a. angular 版本: 6.1
 
-  b. 使用 ng-cosmos-ui 组件库,[water-service](https://github.com/ng-microservice/blob/master/WATER.md)处理后端数据
+  b. 使用 ng-cosmos-ui 组件库,[water-service](https://github.com/lamphc/ng-microservice/blob/master/WATER.md)处理后端数据
 
   c. 使用 water-utils 处理国际化和多主题切换
 
